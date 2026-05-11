@@ -1,0 +1,32 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --font: 'Cairo', sans-serif;
+  --bg: #f5f4f0;
+  --surface: #ffffff;
+  --border: rgba(0,0,0,0.1);
+  --border-strong: rgba(0,0,0,0.2);
+  --text: #1a1a18;
+  --text-muted: #6b6b66;
+  --text-hint: #9c9a92;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --green-bg: #eaf3de; --green-text: #3b6d11;
+  --amber-bg: #faeeda; --amber-text: #854f0b;
+  --red-bg:   #fcebeb; --red-text:   #a32d2d;
+  --blue-bg:  #e6f1fb; --blue-text:  #185fa5;
+  --purple-bg:#eeedfe; --purple-text:#534ab7;
+}
+
+html, body { height: 100%; }
+body { font-family: var(--font); background: var(--bg); color: var(--text); direction: rtl; }
+#root { height: 100%; }
+
+button { font-family: var(--font); cursor: pointer; }
+input, select, textarea { font-family: var(--font); direction: rtl; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 3px; }
